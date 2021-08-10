@@ -11,7 +11,7 @@ const ProductController = require('../controllers/products')
 
 */
 
-router.get('/products', ProductController.get)
+router.get('/products/:id?', ProductController.get) // Usa '?' para indicar que o parametro (:id) é opcional
 // router.post('/products', ProductController.post)
 // router.put('/products/:id', ProductController.put)
 // router.delete('/products/:id', productsontroller.delete)
